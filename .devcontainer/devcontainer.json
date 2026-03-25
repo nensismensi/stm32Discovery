@@ -1,0 +1,17 @@
+{
+    "name": "STM32 Development",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "marus25.cortex-debug",
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    },
+    // Run commands after container creation
+    "postCreateCommand": "arm-none-eabi-gcc --version"
+}
